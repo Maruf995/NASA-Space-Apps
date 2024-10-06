@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Space Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay="autoplay">
+        <source src="media/interstellar.mp3">
+    </audio>
+    <!-- Первый блок с видео и текстом -->
+    <div class="video-container" id="top">
+        <video autoplay muted loop>
+            <source src="media/footage.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <h1>James Webb</h1>
+            <h3>Astro Explorers Team</h3>
+        </div>
+    </div>
+    
+    <!-- Второй блок с iframe -->
+    <div class="content">
+        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/sc_jwst?search=false&shareButton=false&menu=false" allowfullscreen></iframe>
+    </div>
+
+    <!-- Статичное изображение для прокрутки вверх -->
+    <div class="image-container" id="scrollBtn">
+        <img src="media/james-webb.png" alt="Scroll to Top" class="scroll-to-top">
+    </div>
+
+    <!-- Третий блок с слайдером -->
+    <div class="slider-container">
+        <button class="prev">&larr;</button>
+
+        <div class="slider">
+            <!-- Основная фотография и её копия -->
+            <div class="main-slide">
+                <img src="" alt="Image 1" class="main-image">
+                <img src="" alt="Image 1 Copy" class="copy-image">
+            </div>
+        </div>
+
+        <button class="next">&rarr;</button>
+    </div>
+
+    <!-- Блоки с описанием и названием -->
+    <div class="info-container">
+        <div class="description">
+            <p></p>
+        </div>
+        <div class="name">
+            <h2>Название изображения</h2>
+            <img src="media/message.png" alt="Фон изображения" class="name-image">
+            <img src="media/james-human.PNG" alt="Second Image" class="second-image"> <!-- Новое изображение -->
+        </div>
+    </div>
+
+    <div class="partners-container">
+        <div class="partners-logos">
+            <img src="media/part-1.svg"  class="partner-logo">
+            <img src="media/part-2.svg"  class="partner-logo">
+            <img src="media/part-3.svg"  class="partner-logo logo-large">
+        </div>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
